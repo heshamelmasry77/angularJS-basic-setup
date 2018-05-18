@@ -1,0 +1,11 @@
+angular
+  .module('CarZarDIConfig', [])
+  .provider('Config', function () {
+    return {
+      diApiDomain: 'https://cz4-pricing.herokuapp.com',
+      isDebug: true,
+      $get: function () {
+        return this;
+      }
+    }
+  });

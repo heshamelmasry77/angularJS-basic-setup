@@ -1,0 +1,19 @@
+{
+    "auth": {
+      "facebook": {
+          "applicationId": "{your Facebook app ID}",
+          "applicationSecret": "{your Facebook app secret}"
+      },
+      "google": {
+          "applicationId": "{ your google app ID }",
+          "applicationSecret": "{ your google app secret }"
+      }
+    },
+    "pricing": {
+      "api": "http://pricing/public_api"
+    },
+    "mongo": {
+      "connection_string": "mongodb://heroku_21sz4mdl:bk3otavamcsvjhbcp6mrp6i8lm@ds157390.mlab.com:57390/heroku_21sz4mdl"
+    }
+
+}

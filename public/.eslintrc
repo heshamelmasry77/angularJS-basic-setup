@@ -1,0 +1,26 @@
+//more info https://github.com/Gillespie59/eslint-plugin-angular
+{
+  "extends": "eslint:recommended",
+  "plugins": ["angular"],
+  "rules": {
+    "angular/module-getter": 0,
+    "no-console": 0,
+    "angular/log": 0,
+    "angular/json-functions": 0 //maybe return later
+  },
+  "env": {
+    "browser": true,
+    "jasmine": true
+  },
+  "globals": {
+    "angular": true,
+    "module": true,
+    "inject": true,
+    "mixpanel": true,
+    "moment": true,
+    "google": true,
+    "IS_MOBILE": true,
+    "MOBILE_SUPPORT": true,
+    "ApplicationConfiguration": true
+  }
+}

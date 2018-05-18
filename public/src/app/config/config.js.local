@@ -1,0 +1,11 @@
+angular
+  .module('CarZarDIConfig', [])
+  .provider('Config', function () {
+    return {
+      diApiDomain: 'http://localhost:3001',
+      isDebug: true,
+      $get: function () {
+        return this;
+      }
+    }
+  });

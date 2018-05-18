@@ -1,0 +1,16 @@
+{
+    "auth": {
+      "facebook": {
+          "applicationId": "{your Facebook app ID}",
+          "applicationSecret": "{your Facebook app secret}"
+      },
+      "google": {
+          "applicationId": "{ your google app ID }",
+          "applicationSecret": "{ your google app secret }"
+      }
+    },
+    "quoting": {
+      "api_url": "0.0.0.0:40111"
+    }
+
+}
