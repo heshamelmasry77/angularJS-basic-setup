@@ -12,7 +12,7 @@
   function routerConfig($stateProvider) {
     $stateProvider
       .state('profile', {
-        url: '/profile',
+        url: '/',
         templateUrl: 'app/modules/profile/views/profile.html',
         controller: 'ProfileController',
         controllerAs: 'profile'

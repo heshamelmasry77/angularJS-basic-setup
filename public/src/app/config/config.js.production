@@ -2,7 +2,6 @@ angular
   .module('CarZarDIConfig', [])
   .provider('Config', function () {
     return {
-      diApiDomain: 'https://cz4-booking-production.herokuapp.com',
       isDebug: false,
       $get: function () {
         return this;

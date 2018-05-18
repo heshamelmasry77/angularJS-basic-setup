@@ -17,7 +17,7 @@
 
     $rootScope.$on('$stateChangeError',
       function (event, toState, toParams, fromState, fromParams, error) {
-        if(error && error.type == '404') {
+        if(error && error.type === '404') {
           return $state.go('404');
         }
 

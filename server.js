@@ -4,7 +4,6 @@ var config = require('nconf');
 config.env().file({ file: 'settings.json' });
 
 require('./config')(app, config);
-require('./modules/Catalog/routes.js')(app, config);
 require('./modules/Profile/routes.js')(app, config);
 
 var server = require('http').createServer(app);

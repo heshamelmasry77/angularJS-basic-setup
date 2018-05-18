@@ -6,19 +6,11 @@
   <meta name="viewport" content="user-scalable=0, initial-scale=1.0">
   <style>.async-hide { opacity: 0 !important} </style>
   <base href="/" />
-  <analytics-directive></analytics-directive>
   <meta name="robots" content="follow,index">
   <meta content="image/png" property="og:image:type">
   <meta content="1024" property="og:image:width">
   <meta content="1024" property="og:image:height">
   <meta name="fragment" content="!">
-
-  <title ng-bind="MetaTags.title">Welcome to CarZar Partners</title>
-  <meta name="description" ng-attr-content="{{MetaTags.description}}" content="Welcome to CarZar Partners!">
-  <meta name="keywords" ng-attr-content="{{MetaTags.keywords}}" content="we buy cars, CarZar, Sell Car, Sell My Car, Sell Car Online, Selling Car, Car buyers,  we buy cars for cash, private car sale, car value, car retail value, car worth, used cars, cars for cash,  car valuation, second hand cars, bakkies online, online valuation">
-  <meta ng-repeat="(key, value) in MetaTags.properties" property="{{key}}" content="{{value}}" >
-  <meta name="prerender-status-code" content="{{MetaTags.prerender.statusCode}}">
-  <meta name="prerender-header" ng-if="MetaTags.prerender.header" content="{{MetaTags.prerender.header}}">
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -30,9 +22,6 @@
   <link rel="stylesheet" href="../../bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-base.css" />
   <link rel="stylesheet" href="../../bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-desktop.css" />
   <link rel="stylesheet" href="../../bower_components/angularjs-slider/dist/rzslider.css" />
-  <link rel="stylesheet" href="../../bower_components/lightgallery.js/dist/css/lightgallery.css" />
-  <link rel="stylesheet" href="../../bower_components/angular-ui-select/dist/select.css" />
-  <link rel="stylesheet" href="../../bower_components/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css({public/.tmp/serve,public/src}) /styles/app.css -->
@@ -42,26 +31,14 @@
   <!-- endbuild -->
 </head>
 <body>
-  <script type="text/javascript">
-  (function(){
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = '//api.usersnap.com/load/1a987eaa-8679-4968-af77-6d13c2e7f80d.js';
-    var x = document.getElementsByTagName('script')[0];
-    x.parentNode.insertBefore(s, x);
-  })();
-  </script>
-  <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/e77a7bd1d40bf37378730d1abcfb7b653523df46267e2089f3791dbeaef9479b.js"></script>
-  <script src='https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyB4TPO7L-BwJz4Wf8Udmwe62Ao8u9fTdqk'></script>
+<script src='https://maps.googleapis.com/maps/api/js?libraries=places&language=en&key=AIzaSyB4TPO7L-BwJz4Wf8Udmwe62Ao8u9fTdqk'></script>
 
 
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<carzar-throbber class="preloader fixed"></carzar-throbber>
 
-<div id="main-content-wrapper" ng-if="initFinished" ui-view class="height-full" autoscroll="true"></div>
+<div ui-view></div>
 
 <!-- build:js(public/src) /scripts/vendor.js -->
 <!-- bower:js -->
@@ -70,6 +47,7 @@
 <script src="../../bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="../../bower_components/angular-resource/angular-resource.js"></script>
+<script src="../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="../../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 <script src="../../bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
 <script src="../../bower_components/moment/moment.js"></script>
@@ -81,110 +59,34 @@
 <script src="../../bower_components/angular-touch/angular-touch.js"></script>
 <script src="../../bower_components/angular-click-outside/clickoutside.directive.js"></script>
 <script src="../../bower_components/angular-telephone-filter/dist/angular-telephone-filter.js"></script>
-<script src="../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="../../bower_components/ui-router-metatags/dist/ui-router-metatags.js"></script>
 <script src="../../bower_components/SHA-1/sha1.js"></script>
 <script src="../../bower_components/angulartics/src/angulartics.js"></script>
 <script src="../../bower_components/angulartics-google-tag-manager/lib/angulartics-google-tag-manager.js"></script>
 <script src="../../bower_components/angularjs-slider/dist/rzslider.js"></script>
-<script src="../../bower_components/angular-scroll/angular-scroll.js"></script>
-<script src="../../bower_components/ng-lodash/build/ng-lodash.js"></script>
-<script src="../../bower_components/lightgallery.js/dist/js/lightgallery.min.js"></script>
-<script src="../../bower_components/lg-thumbnail.js/dist/lg-thumbnail.min.js"></script>
-<script src="../../bower_components/lg-autoplay.js/dist/lg-autoplay.min.js"></script>
-<script src="../../bower_components/lg-fullscreen.js/dist/lg-fullscreen.min.js"></script>
-<script src="../../bower_components/lg-pager.js/dist/lg-pager.min.js"></script>
-<script src="../../bower_components/lg-zoom.js/dist/lg-zoom.min.js"></script>
-<script src="../../bower_components/angular-input-masks/angular-input-masks-standalone.js"></script>
-<script src="../../bower_components/angular-ui-select/dist/select.js"></script>
-<script src="../../bower_components/angular-paging/dist/paging.js"></script>
-<script src="../../bower_components/ng-file-upload/ng-file-upload.js"></script>
-<script src="../../bower_components/angular-base64-upload/src/angular-base64-upload.js"></script>
-<script src="../../bower_components/angular-bootstrap-toggle/dist/angular-bootstrap-toggle.min.js"></script>
-<script src="../../bower_components/angular-dynamic-number/release/dynamic-number.js"></script>
-<script src="../../bower_components/humanize-duration/humanize-duration.js"></script>
-<script src="../../bower_components/angular-timer/dist/angular-timer.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
 <!-- build:js({public/.tmp/serve,public/.tmp/partials,public/src}) /scripts/app.js -->
 <!-- inject:js -->
 <script src="/app/module.config.js"></script>
-<script src="/app/components/CarZarDIHelperComponent.js"></script>
 <script src="/app/app.def.js"></script>
 <script src="/app/app.config.js"></script>
 <script src="/app/app.constants.js"></script>
 <script src="/app/app.route.js"></script>
 <script src="/app/app.run.js"></script>
-<script src="/app/modules/catalog/catalog.def.js"></script>
 <script src="/app/modules/profile/profile.def.js"></script>
-<script src="/app/modules/static/Static.def.js"></script>
-<script src="/app/modules/catalog/catalog.route.js"></script>
 <script src="/app/modules/profile/profile.route.js"></script>
-<script src="/app/modules/static/Static.route.js"></script>
 <script src="/app/config/config.js"></script>
-<script src="/app/shared/controllers/DIGalleryController.js"></script>
-<script src="/app/shared/controllers/DIGalleryMiniController.js"></script>
-<script src="/app/shared/controllers/NewPasswordController.js"></script>
-<script src="/app/shared/controllers/ResetPasswordController.js"></script>
-<script src="/app/shared/controllers/SignupConfirmController.js"></script>
-<script src="/app/shared/controllers/SignupController.js"></script>
-<script src="/app/shared/directives/AnalyticsDirective.js"></script>
-<script src="/app/shared/directives/CarouselChangeDirective.js"></script>
-<script src="/app/shared/directives/CarzarThrobberDirective.js"></script>
-<script src="/app/shared/directives/CategoriesNavBarDirective.js"></script>
-<script src="/app/shared/directives/DIFilterDirective.js"></script>
-<script src="/app/shared/directives/DIFooterDirective.js"></script>
-<script src="/app/shared/directives/DIGalleryDirective.js"></script>
-<script src="/app/shared/directives/DIGalleryMiniDirective.js"></script>
-<script src="/app/shared/directives/DIHeaderDirective.js"></script>
-<script src="/app/shared/directives/DIHowItWorksDirective.js"></script>
-<script src="/app/shared/directives/DIPaginationDirective.js"></script>
-<script src="/app/shared/directives/DIViewOptions.js"></script>
-<script src="/app/shared/directives/GoBackDirective.js"></script>
-<script src="/app/shared/directives/HighlightsDealDirective.js"></script>
-<script src="/app/shared/directives/HighlightsDirective.js"></script>
-<script src="/app/shared/directives/MakeOfferDirective.js"></script>
-<script src="/app/shared/directives/NumbersOnly.js"></script>
 <script src="/app/shared/directives/SharedDirective.js"></script>
-<script src="/app/shared/directives/fileUploader.js"></script>
-<script src="/app/shared/directives/formatNumberDirective.js"></script>
-<script src="/app/shared/directives/lightGalleryDirective.js"></script>
-<script src="/app/shared/directives/offerInputDirective.js"></script>
-<script src="/app/shared/directives/passwordConfirm.js"></script>
-<script src="/app/shared/directives/popupModalFactory.js"></script>
-<script src="/app/shared/directives/setFixedClass.js"></script>
-<script src="/app/shared/filters/UrlTrustedFilter.js"></script>
-<script src="/app/shared/services/AuthService.js"></script>
-<script src="/app/shared/services/GoogleTagManagerService.js"></script>
-<script src="/app/shared/services/HttpInterceptor.js"></script>
-<script src="/app/shared/services/StorageHelperService.js"></script>
-<script src="/app/shared/services/ThrobberService.js"></script>
-<script src="/app/shared/services/UserApiService.js"></script>
-<script src="/app/modules/catalog/controllers/CatalogController.js"></script>
-<script src="/app/modules/catalog/controllers/DealController.js"></script>
-<script src="/app/modules/catalog/controllers/MyOrdersController.js"></script>
-<script src="/app/modules/catalog/controllers/OfferHistoryController.js"></script>
-<script src="/app/modules/catalog/controllers/OffersController.js"></script>
-<script src="/app/modules/catalog/controllers/PricingListController.js"></script>
-<script src="/app/modules/catalog/controllers/ProductController.js"></script>
-<script src="/app/modules/catalog/services/CategoriesApiService.js"></script>
-<script src="/app/modules/catalog/services/DealsApiService.js"></script>
-<script src="/app/modules/catalog/services/OffersApiService.js"></script>
-<script src="/app/modules/catalog/services/OrdersApiService.js"></script>
-<script src="/app/modules/catalog/services/ProductsApiService.js"></script>
+<script src="/app/shared/services/SharedService.js"></script>
 <script src="/app/modules/profile/controllers/ProfileController.js"></script>
-<script src="/app/modules/static/controller/FaqController.js"></script>
-<script src="/app/modules/static/controllers/ContactUsController.js"></script>
-<script src="/app/modules/static/services/StaticApiService.js"></script>
 <!-- endinject -->
 
 <!-- inject:partials -->
 <!-- angular templates will be automatically converted in js and inserted here -->
 <!-- endinject -->
 <!-- endbuild -->
-
-<script src="/bower_components/angular-i18n/angular-locale_en-za.js"></script>
 
 </body>
 </html>
