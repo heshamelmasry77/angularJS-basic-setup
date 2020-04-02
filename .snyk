@@ -1,0 +1,220 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - express > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > connect > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > connect > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > localtunnel > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > resp-modifier > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > serve-index > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - express > send > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - express > connect > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > express > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-eslint > eslint > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > connect > finalhandler > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > connect > finalhandler > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > foxy > connect > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > serve-static > send > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - express > connect > send > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > express > send > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > express > connect > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > foxy > connect > finalhandler > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > express > connect > send > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > saucelabs > https-proxy-agent > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > body-parser > debug:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:extend:20180424':
+    - prerender-node > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > dom-serialize > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - phantomjs > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > localtunnel > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > openid > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - less-middleware > less > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-useref > vinyl-fs > glob-stream > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > webdriver-manager > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > node-gyp > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > saucelabs > https-proxy-agent > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > saucelabs > https-proxy-agent > agent-base > extend:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:hoek:20180212':
+    - browser-sync > localtunnel > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > openid > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - less-middleware > less > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > localtunnel > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > openid > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - less-middleware > less > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > localtunnel > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > openid > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - less-middleware > less > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > webdriver-manager > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > localtunnel > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > openid > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - less-middleware > less > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > webdriver-manager > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > webdriver-manager > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > webdriver-manager > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:lodash:20180130':
+    - browser-sync > easy-extender > lodash:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:mime:20170907':
+    - browser-sync > serve-static > send > mime:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:minimatch:20160620':
+    - main-bower-files > vinyl-fs > glob-stream > minimatch:
+        patched: '2020-04-02T01:47:04.655Z'
+    - main-bower-files > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2020-04-02T01:47:04.655Z'
+    - main-bower-files > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:request:20160119':
+    - everyauth > request:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:stringstream:20180511':
+    - prerender-node > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - phantomjs > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > localtunnel > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > openid > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - less-middleware > less > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > webdriver-manager > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > node-gyp > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2020-04-02T01:47:04.655Z'
+  'npm:tough-cookie:20170905':
+    - prerender-node > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > localtunnel > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - everyauth > openid > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - less-middleware > less > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-protractor > protractor > webdriver-manager > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - gulp-sass > node-sass > node-gyp > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - browser-sync > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - karma > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
+    - nodemon > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2020-04-02T01:47:04.655Z'
