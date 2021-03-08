@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node server",
-    "heroku-postbuild": "sh ./heroku-build.sh"
+    "heroku-postbuild": "sh ./heroku-build.sh",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "bower": "^1.8.0",
@@ -64,7 +66,8 @@
     "socket.io": "~0.9.13",
     "twig": "^1.10.4",
     "uglify-save-license": "^0.4.1",
-    "wiredep": "~2.2.2"
+    "wiredep": "~2.2.2",
+    "snyk": "^1.476.0"
   },
   "noAnalyze": true,
   "license": "Apache",
@@ -93,5 +96,6 @@
     "lodash": "^3.10.1",
     "orchestrator": "^0.3.8",
     "wiredep": "^2.2.2"
-  }
+  },
+  "snyk": true
 }
