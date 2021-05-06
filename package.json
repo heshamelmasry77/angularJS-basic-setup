@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "bower": "^1.8.0",
-    "browser-sync": "~2.26.9",
+    "browser-sync": "~2.26.14",
     "browser-sync-spa": "~1.0.3",
     "chalk": "~1.1.1",
     "consolidate": "^0.14.5",
@@ -44,7 +44,7 @@
     "http-proxy-middleware": "~0.9.0",
     "jade": "*",
     "jasmine-expect": "^3.7.0",
-    "karma": "~4.2.0",
+    "karma": "~5.0.8",
     "karma-angular-filesort": "~1.0.0",
     "karma-coverage": "~0.5.2",
     "karma-jasmine": "~0.3.6",
@@ -72,7 +72,7 @@
     "node": "~8.2.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.9",
+    "browser-sync": "^2.26.14",
     "browser-sync-spa": "^1.0.3",
     "del": "^2.0.2",
     "eslint-plugin-angular": "^0.12.0",
@@ -89,7 +89,7 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.8",
     "http-proxy-middleware": "^0.9.1",
-    "karma": "^4.2.0",
+    "karma": "^5.0.8",
     "lodash": "^3.10.1",
     "orchestrator": "^0.3.8",
     "wiredep": "^2.2.2"
